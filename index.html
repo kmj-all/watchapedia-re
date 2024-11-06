@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왓챠피디아</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script>
+        window.onload = () => {
+            let menuBtn = document.querySelector('.menu_btn')
+            let mobileNav = document.querySelector('.mobile_l')
+            let searchBtn = document.querySelector('.search_btn')
+            let searchItem = document.querySelector('.search')
+
+            menuBtn.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+
+            })
+
+            searchBtn.addEventListener('click', () => {
+                searchItem.classList.toggle('active');
+            })
+
+
+
+            var mql = window.matchMedia("screen and (max-width: 1820px)");
+
+            if (mql.matches) {
+                //console.log("화면의 너비가 1820px 보다 작습니다.");
+                var swiper = new Swiper(".contentstopSwiper", {
+                    slidesPerView: 'auto',
+                    spaceBetween: 19,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        
+                        1919: {
+                            slidesPerView: "auto",
+                            spaceBetween: 19,
+                        },
+                        1920: {
+                            slidesPerView: 3,
+                            spaceBetween: 19,
+                        },
+                    },
+                });
+                
+            } //if
+
+            var mql = window.matchMedia("screen and (max-width: 1820px)");
+
+            if (mql.matches) {
+                //console.log("화면의 너비가 1820px 보다 작습니다.");
+                var swiper = new Swiper(".contentsbttomSwiper", {
+                    slidesPerView: 'auto',
+                    spaceBetween: 19,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        
+                        1919: {
+                            slidesPerView: "auto",
+                            spaceBetween: 19,
+                        },
+                        1920: {
+                            slidesPerView: 3,
+                            spaceBetween: 19,
+                        },
+                    },
+                });
+                
+            } //if
+            
+        } //script end
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="inner">
+                <ul class="header_l pc">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="img/로고.png" alt="로고" />
+                        </a>
+                    </h1> <!-- 로고 -->
+                    <nav class="pc_nav pc">
+                        <ul class="gnb">
+                            <li>
+                                <a href="#" class="depth01">홈</a>
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">영화</a>
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">시리즈</a>
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">책</a>
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">웹툰</a>
+                            </li>
+                        </ul> <!-- gnb -->
+                    </nav> <!-- pc_nav pc -->
+                </ul> <!-- header_r -->
+                <ul class="header_r pc">
+                    <div class="header_r_01 pc">
+                        <input class="search" type="text" placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요." />
+                        <img src="img/버튼아이콘/search.png" alt="검색 아이콘" />
+                    </div><!-- header_r_01 pc -->
+                    <div class="login pc">
+                        <a href="#">
+                            <p>로그인</p>
+                        </a>
+                    </div><!-- login pc -->
+                    <div class="sign_up pc">
+                        <a href="#">
+                            <p>회원가입</p>
+                        </a>
+                    </div><!-- sign_up pc -->
+                </ul> <!-- header_r -->
+
+                <!-- 모바일 -->
+                <div class="mobile_btn mobile">
+                    <div class="search_btn mobile">
+                        <input class="search" type="text" placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요." />
+                        <img src="img/버튼아이콘/search02.png" alt="메뉴보기">
+                    </div>
+                    <div class="menu_btn mobile">
+                        <img src="img/버튼아이콘/menu.png" alt="메뉴보기">
+                    </div>
+                </div>
+
+                <nav class="mobile_l mobile">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#" class="depth01">홈</a>
+                        </li>
+                        <li>
+                            <a href="#" class="depth01">영화</a>
+                        </li>
+                        <li>
+                            <a href="#" class="depth01">시리즈</a>
+                        </li>
+                        <li>
+                            <a href="#" class="depth01">책</a>
+                        </li>
+                        <li>
+                            <a href="#" class="depth01">웹툰</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile_r mobile">
+                        <div class="login">
+                            <a href="#">
+                                <p>로그인</p>
+                            </a>
+                        </div><!-- login mobile -->
+                        <div class="sign_up">
+                            <a href="#">
+                                <p>회원가입</p>
+                            </a>
+                        </div><!-- sign_up mobile -->
+                    </ul> <!-- header_r -->
+                </nav>
+
+            </div> <!-- 이너 끝 -->
+        </header> <!-- 헤더 끝 -->
+
+        <!-- 메인 부분  -->
+        <section class="main">
+            <!-- Swiper -->
+            <div class="swiper mainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/아티클/개그맨.png" alt="광고/개그맨" /></a>
+                        <P class="ad">AD</P>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/아티클/이번분기 일드.png" alt="인기 아티클" /></a>
+                        <a href="#">
+                            <div class="text_box">
+                                <p class="name_1">인기 아티클</p>
+                                <div class="text_box_1">
+                                    <div class="text_box_2">
+                                        <img src="img/아티클/왓챠.png" alt=" 왓챠 아이콘" />
+                                        <p>아티클</p>
+                                    </div><!-- text_box_2 끝 -->
+                                    <p>이번 분기 일드 뭐 볼지 고민이신가요?</p>
+                                    <p>~로맨스, 추리, 수사, 미스터리 취향대로 골라 보세요~</p>
+                                </div><!-- text_box_1 끝 -->
+                            </div><!-- text_box 끝 -->
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/아티클/정년이.png" alt="인기 아티클" /></a>
+                        <a href="#">
+                            <div class="text_box">
+                                <p class="name_2">지금 가장 핫한 작품</p>
+                                <div class="text_wrap">
+                                    <div class="text_info">
+                                        <p>정년이</p>
+                                        <p>tvN · 드라마</p>
+                                    </div><!-- text_info 끝 -->
+                                    <div class="ott_img">
+                                        <img src="img/아티클/티빙.png" alt="티빙" />
+                                        <img src="img/아티클/디즈니플러스.png" alt="디즈니플러스" />
+                                    </div><!-- ott_img 끝 -->
+                                </div><!-- text_wrap 끝 -->
+                            </div><!-- text_box 끝 -->
+                        </a>
+                    </div><!-- text_box 끝 -->
+                </div><!-- swiper-wrapper 끝 -->
+            </div><!-- swiper mainSwiper 끝 -->
+            <div class="swiper-pagination"></div>
+
+    </div> <!-- swiper mainSwiper -->
+
+
+    </section><!-- main 끝 -->
+
+    <section class="main_menu">
+        <div class="menu_wrap">
+            <div class="menu_item">
+                <a href="#">
+                    <img src="img/메뉴아이콘/매거진.png" alt="매거진 아이콘">
+                    <p>매거진</p>
+                </a>
+            </div><!-- menu_item 끝 -->
+            <div class="menu_item">
+                <a href="#">
+                    <img src="img/메뉴아이콘/코멘트.png" alt="코멘트 아이콘">
+                    <p>코멘트</p>
+                </a>
+            </div><!-- menu_item 끝 -->
+            <div class="menu_item">
+                <a href="#">
+                    <img src="img/메뉴아이콘/캘린더.png" alt="캘린더 아이콘">
+                    <p>캘린더</p>
+                </a>
+            </div><!-- menu_item 끝 -->
+            <div class="menu_item">
+                <a href="#">
+                    <img src="img/메뉴아이콘/취향분석.png" alt="취향분석 아이콘">
+                    <p>취향분석</p>
+                </a>
+            </div><!-- menu_item 끝 -->
+            <div class="menu_item">
+                <a href="#">
+                    <img src="img/메뉴아이콘/추천.png" alt="추천 아이콘">
+                    <p>추천</p>
+                </a>
+            </div><!-- menu_item 끝 -->
+        </div><!-- menu_wrap 끝 -->
+    </section><!-- main_menu 끝 -->
+
+
+
+    <section class="rank">
+        <p class="title">왓챠피디아 HOT 랭킹</p>
+        <div class="swiper hotRank">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/대도시의 사랑법.png" alt="대도시의 사랑법" />
+                        <div class="text hotrank">
+                            <p class="rank_title">대도시의 사랑법</p>
+                            <p class="rank_type">드라마 / 로맨스</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 change">
+                            <span>1</span>
+                            <img src="img/핫랭킹/순위 업.png" alt="순위상승" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/결혼 하겠나_.png" alt="결혼, 하겠나" />
+                        <div class="text hotrank">
+                            <p class="rank_title">결혼, 하겠나?</p>
+                            <p class="rank_type">드라마 / 코미디</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 ad">
+                            <span>AD</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/이토록, 친밀한 배신자.png" alt="이토록, 친밀한 배신자" />
+                        <div class="text hotrank">
+                            <p class="rank_title">이토록, 친밀한 배신자</p>
+                            <p class="rank_type">스릴러</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 change">
+                            <span>2</span>
+                            <img src="img/핫랭킹/순위 다운.png" alt="순위하락" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/전, 란.png" alt="전, 란" />
+                        <div class="text hotrank">
+                            <p class="rank_title">전, 란</p>
+                            <p class="rank_type">액션/역사/시대극</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 change">
+                            <span>3</span>
+                            <img src="img/핫랭킹/순위 업.png" alt="순위상승" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/베테랑2.png" alt="대도시의 사랑법" />
+                        <div class="text hotrank">
+                            <p class="rank_title">베테랑 2</p>
+                            <p class="rank_type">범죄/액션/드라마</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 no-change">
+                            <span>4</span>
+                            <img src="img/핫랭킹/변동 없음.png" alt="변동없음" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/사랑 후에 오는 것들.png" alt="사랑 후에 오는 것들" />
+                        <div class="text hotrank">
+                            <p class="rank_title">사랑 후에 오는 것들</p>
+                            <p class="rank_type">로맨스</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 change">
+                            <span>5</span>
+                            <img src="img/핫랭킹/순위 업.png" alt="순위상승" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/좋거나 나쁜 동재.png" alt="좋거나 나쁜 동재" />
+                        <div class="text hotrank">
+                            <p class="rank_title">좋거나 나쁜 동재</p>
+                            <p class="rank_type">드라마</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 change">
+                            <span>6</span>
+                            <img src="img/핫랭킹/순위 다운.png" alt="순위상승" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/지옥에서 온 판사.png" alt="지옥에서 온 판사" />
+                        <div class="text hotrank">
+                            <p class="rank_title">지옥에서 온 판사</p>
+                            <p class="rank_type">판타지/범죄</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 no-change">
+                            <span>7</span>
+                            <img src="img/핫랭킹/변동 없음.png" alt="순위상승" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/조커.png" alt="조커:폴리아되" />
+                        <div class="text hotrank">
+                            <p class="rank_title">조커: 폴리 아 되</p>
+                            <p class="rank_type">범죄</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 change">
+                            <span>8</span>
+                            <img src="img/핫랭킹/순위 다운.png" alt="순위상승" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/핫랭킹/흑백요리사.png" alt="흑백요리사" />
+                        <div class="text hotrank">
+                            <p class="rank_title">흑백요리사</p>
+                            <p class="rank_type">예능</p>
+                        </div><!-- text hotrank end -->
+                        <div class="rank_01 change">
+                            <span>9</span>
+                            <img src="img/핫랭킹/순위 업.png" alt="순위상승" />
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+            </div><!-- swiper-wrapper -->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!-- swiper hotRank end -->
+
+
+    </section> <!-- rank end -->
+
+    <section class="box_office">
+        <p class="title">박스오피스 순위</p>
+        <div class="swiper boxOffice">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/베놈.png" alt="베놈" />
+                        <div class="text in_box_office">
+                            <p class="box_title">베놈 : 라스트댄스</p>
+                            <p class="box_type">2024 ・ 미국</p>
+                            <p class="box_rate">예매율 18%</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>1</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/보통의 가족.png" alt="보통의 가족" />
+                        <div class="text in_box_office">
+                            <p class="box_title">보통의 가족</p>
+                            <p class="box_type">2023 ・ 한국</p>
+                            <p class="box_rate">예매율 16% ・ 누적 관객 8.3만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>2</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/더러운 돈에 손대지마라.png" alt="더러운 돈에 손대지 마라" />
+                        <div class="text in_box_office">
+                            <p class="box_title">더러운 돈에 손대지 마라</p>
+                            <p class="box_type">2024 ・ 한국</p>
+                            <p class="box_rate">예매율 6.2% ・ 누적 관객 1.7만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>3</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/룩백.png" alt="룩백" />
+                        <div class="text in_box_office">
+                            <p class="box_title">룩백</p>
+                            <p class="box_type">2024 ・ 일본</p>
+                            <p class="box_rate">예매율 0.7% ・ 누적 관객 27.3만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>4</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/할머니가 죽기 전 백만장자가 되는 법.png" alt="할머니가 죽기 전 백만장자가 되는 법" />
+                        <div class="text in_box_office">
+                            <p class="box_title">할머니가 죽기 전 백만장자가 되는 법</p>
+                            <p class="box_type">2024 ・ 태국</p>
+                            <p class="box_rate">예매율 0.7% ・ 누적 관객 1.1만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>5</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/고래와 나.png" alt="고래와 나" />
+                        <div class="text in_box_office">
+                            <p class="box_title">고래와 나</p>
+                            <p class="box_type">2024 ・ 한국</p>
+                            <p class="box_rate">예매율 1.2% ・ 누적 관객 1674명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>6</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/하이큐.png" alt="하이큐" />
+                        <div class="text in_box_office">
+                            <p class="box_title">극장판 하이큐!! 쓰레기장의 결전</p>
+                            <p class="box_type">2023 ・ 일본</p>
+                            <p class="box_rate">예매율 1.1% ・ 누적 관객 73.2만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>7</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/아이브 퍼스트 투어.png" alt="아이브 퍼스트 투어" />
+                        <div class="text in_box_office">
+                            <p class="box_title">
+                                아이브 더 퍼스트 월드투어 인 시네마</p>
+                            <p class="box_type">2024 ・ 한국</p>
+                            <p class="box_rate">예매율 1.1% ・ 누적 관객 2.5만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>8</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/룸 넥스트 도어.png" alt="룸 넥스트 도어" />
+                        <div class="text in_box_office">
+                            <p class="box_title">룸 넥스트 도어</p>
+                            <p class="box_type">2024 ・ 스페인</p>
+                            <p class="box_rate">예매율 0.7% ・ 누적 관객 1.2만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>9</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/박스오피스/와일드 로봇.png" alt="와일드 로봇" />
+                        <div class="text in_box_office">
+                            <p class="box_title">와일드 로봇</p>
+                            <p class="box_type">2024 ・ 미국</p>
+                            <p class="box_rate">예매율 0.4% ・ 누적 관객 59.9만명</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>10</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+            </div><!-- swiper-wrapper -->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!-- swiper hotRank end -->
+    </section><!-- box_office end -->
+
+    <section class="book_rank">
+        <p class="title">책 검색 순위</p>
+        <div class="swiper bookRank">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/채식주의자.png" alt="채식주의자" />
+                        <div class="text bookrank">
+                            <p class="book_title">채식주의자</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>1</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/소년이 온다.png" alt="소년이 온다" />
+                        <div class="text bookrank">
+                            <p class="book_title">소년이 온다</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>2</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/이중하나는거짓말.png" alt="이중 하나는 거짓말" />
+                        <div class="text bookrank">
+                            <p class="book_title">이중 하나는 거짓말</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>3</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/사랑에대해내가아는모든것.png" alt="사랑에 대해 내가 아는 모든 것" />
+                        <div class="text bookrank">
+                            <p class="book_title">사랑에 대해 내가 아는 모든 것</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>4</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/작별하지않는다.png" alt="작별하지 않는다" />
+                        <div class="text bookrank">
+                            <p class="book_title">작별하지 않는다</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>5</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/책 검색 순위/복수의 여신.png" alt="복수의 여신" />
+                        <div class="text bookrank">
+                            <p class="book_title">복수의 여신</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>6</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/책 검색 순위/사바삼사라 서.png" alt="사바삼사라 서" />
+                        <div class="text bookrank">
+                            <p class="book_title">사바삼사라 서</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>7</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/책 검색 순위/삼체.png" alt="삼체" />
+                        <div class="text bookrank">
+                            <p class="book_title">
+                                삼체 1~3 세트 - 전3권</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>8</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/책 검색 순위/조금 망한 사랑.png" alt="조금 망한 사랑" />
+                        <div class="text bookrank">
+                            <p class="book_title">조금 망한 사랑</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>9</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img class="img_1" src="img/베스트셀러/책 검색 순위/엘리펀트 헤드.png" alt="엘리펀트 헤드" />
+                        <div class="text bookrank">
+                            <p class="book_title">엘리펀트 헤드</p>
+                        </div><!-- text in_box_office end -->
+                        <div class="rank_01">
+                            <span>10</span>
+                        </div><!-- rank end -->
+                    </a>
+                </div><!-- swiper-slide -->
+            </div><!-- swiper-wrapper -->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!-- swiper book end -->
+    </section><!-- book_rank end -->
+
+    <div class="banner n1">
+        <a href="#" class="pc">
+            <img src="img/시사회-배너-수정본.png" alt="왓챠 예상별점 블라인드 시사회" />
+        </a>
+        <!-- <a href="#" class="tablet">
+                <img src="img/시사회-배너-수정본.png" alt="왓챠 예상별점 블라인드 시사회"/>
+            </a> -->
+    </div><!-- banner n1 -->
+
+    <section class="magazine">
+        <div class="magazine_text">
+            <p class="title">매거진</p>
+            <div class="left_more">
+                <a href="#">더보기 <span>></span></a>
+            </div><!-- left_more end -->
+        </div><!-- magazin_text end -->
+        <div class="swiper magazineWrap">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="magazine_item">
+                            <img class="img_2" src="img/매거진/영화제.png" alt="올해 남은 영화제 라인업" />
+                            <div class="magazine_item_text">
+                                <div class="item_text1">
+                                    <img src="img/매거진/왓챠 아이콘.png" alt="아이콘" />
+                                    <p>큐레이션</p>
+                                </div><!--item_text1 end -->
+                                <p class="magazine_title">올해 남은 영화제 라인업 총정리</p>
+                                <p class="magazine_subtitle">부국제부터 서독제까지 주요 영화제 모아보기!</p>
+                            </div><!--magazine_item_text end -->
+                        </div><!-- magazine_item end -->
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="magazine_item">
+                            <img class="img_2" src="img/매거진/청설.png" alt="올해 남은 영화제 라인업" />
+                            <div class="magazine_item_text">
+                                <div class="item_text1">
+                                    <img src="img/매거진/왓챠 아이콘.png" alt="아이콘" />
+                                    <p>미디어</p>
+                                </div><!--item_text1 end -->
+                                <p class="magazine_title">설렘 가득한 첫사랑 〈청설〉 보도스틸</p>
+                                <p class="magazine_subtitle">대세 라이징 배우들의 비주얼 합과 케미스트리 확인!!</p>
+                            </div><!--magazine_item_text end -->
+                        </div><!-- magazine_item end -->
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="magazine_item">
+                            <img class="img_2" src="img/매거진/디즈니플러스 공개예정작.png" alt="올해 남은 영화제 라인업" />
+                            <div class="magazine_item_text">
+                                <div class="item_text1">
+                                    <img src="img/매거진/왓챠 아이콘.png" alt="아이콘" />
+                                    <p>신작소개</p>
+                                </div><!--item_text1 end -->
+                                <p class="magazine_title">COMING SOON! 디즈니+
+                                    오리지널 라인업</p>
+                                <p class="magazine_subtitle">〈강남 비-사이드〉, 〈조명가게〉, 〈트리거〉, <br>
+                                    〈하이퍼나이프〉, 〈넉오프〉 등 디즈니+ 공개 예정작 모음.zip</p>
+                            </div><!--magazine_item_text end -->
+                        </div><!-- magazine_item end -->
+                    </a>
+                </div><!-- magazine_item end -->
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!--  magazineWrap end -->
+    </section><!-- magazine end -->
+
+    <section class="main_group">
+
+        <div class="coment">
+            <div class="coment_text">
+                <p class="title">지금 뜨는 코멘트</p>
+                <div class="left_more">
+                    <a href="#">더보기 <span>></span></a>
+                </div><!-- left_more end -->
+            </div><!-- coment_text end -->
+            <div class="coment_wrap">
+                <div class="coment_item">
+                    <div class="item_top">
+                        <div class="item_top_left">
+                            <div class="profile"></div>
+                            <p class="nickname">양기자 ( YCU )</p>
+                        </div><!-- item_top_left end -->
+                        <div class="item_top_right">
+                            <div class="star">
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (g).png" alt="평가" />
+                            </div>
+                        </div><!-- item_top_right end -->
+                    </div><!-- item_top end -->
+                    <div class="item_middle">
+                        <a href="#"><img src="img/코멘트/챌린저스.png" alt="챌린저스"></a>
+                        <div class="middle_text">
+                            <p class="coment_title">챌린저스</p>
+                            <p class="coment_middle_text">스포츠 영화로도 찌릿하고, 삼각관계 영화로도 짜릿하고,
+                                배우와 각본이 스매시를 쌍으로 날린다.</p>
+                        </div><!-- middle_text end -->
+                    </div><!-- item_middle end -->
+                    <div class="item_bottom">
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <p>0</p>
+                        </div><!-- bottom_01end -->
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <p>91</p>
+                        </div><!-- bottom_01end -->
+                    </div><!-- item_bottom end -->
+                </div><!-- coment_item end -->
+
+                <div class="coment_item">
+                    <div class="item_top">
+                        <div class="item_top_left">
+                            <div class="profile box2"></div>
+                            <p class="nickname">재원</p>
+                        </div><!-- item_top_left end -->
+                        <div class="item_top_right">
+                            <div class="star">
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (g).png" alt="평가" />
+                            </div>
+                        </div><!-- item_top_right end -->
+                    </div><!-- item_top end -->
+                    <div class="item_middle">
+                        <a href="#"><img src="img/코멘트/로봇드림.png" alt="로봇드림"></a>
+                        <div class="middle_text">
+                            <p class="coment_title">로봇드림</p>
+                            <p class="coment_middle_text">마침표가 깔끔해야 추억 또한 아름답게 간직됨을 알면서도,
+                                인간의 가슴은 너무 뜨거워 쿨하기가 힘들어.</p>
+                        </div><!-- middle_text end -->
+                    </div><!-- item_middle end -->
+                    <div class="item_bottom">
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <p>0</p>
+                        </div><!-- bottom_01end -->
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <p>95</p>
+                        </div><!-- bottom_01end -->
+                    </div><!-- item_bottom end -->
+                </div><!-- coment_item end -->
+
+                <div class="coment_item">
+                    <div class="item_top">
+                        <div class="item_top_left">
+                            <div class="profile box3"></div>
+                            <p class="nickname">주 혜</p>
+                        </div><!-- item_top_left end -->
+                        <div class="item_top_right">
+                            <div class="star">
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (g).png" alt="평가" />
+                            </div>
+                        </div><!-- item_top_right end -->
+                    </div><!-- item_top end -->
+                    <div class="item_middle">
+                        <a href="#"><img src="img/코멘트/추락의해부.png" alt="추락의 해부"></a>
+                        <div class="middle_text">
+                            <p class="coment_title">추락의 해부</p>
+                            <p class="coment_middle_text">비논리의 연쇄로 일어난 사건의 진위를 논리적으로 파헤친다면
+                                그보다 모호해질 일이 있겠는가</p>
+                        </div><!-- middle_text end -->
+                    </div><!-- item_middle end -->
+                    <div class="item_bottom">
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <p>0</p>
+                        </div><!-- bottom_01end -->
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <p>94</p>
+                        </div><!-- bottom_01end -->
+                    </div><!-- item_bottom end -->
+                </div><!-- coment_item end -->
+
+                <div class="coment_item">
+                    <div class="item_top">
+                        <div class="item_top_left">
+                            <div class="profile box4"></div>
+                            <p class="nickname">콩까기의 종이씹기</p>
+                        </div><!-- item_top_left end -->
+                        <div class="item_top_right">
+                            <div class="star">
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (y).png" alt="평가" />
+                                <img src="img/코멘트/star (g).png" alt="평가" />
+                                <img src="img/코멘트/star (g).png" alt="평가" />
+                            </div>
+                        </div><!-- item_top_right end -->
+                    </div><!-- item_top end -->
+                    <div class="item_middle">
+                        <a href="#"><img src="img/코멘트/데드풀과 울버린.png" alt="데드풀과 울버린"></a>
+                        <div class="middle_text">
+                            <p class="coment_title">데드풀과 울버린</p>
+                            <p class="coment_middle_text">데드풀이 마블의 구세주가 아니라는
+                                사실만 받아들인다면.</p>
+                        </div><!-- middle_text end -->
+                    </div><!-- item_middle end -->
+                    <div class="item_bottom">
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <p>0</p>
+                        </div><!-- bottom_01end -->
+                        <div class="bottom">
+                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <p>52</p>
+                        </div><!-- bottom_01end -->
+                    </div><!-- item_bottom end -->
+                </div><!-- coment_item end -->
+            </div><!-- coment_wrap end -->
+        </div><!-- coment end -->
+
+        <section class="event">
+            <div class="event_text">
+                <p class="title">이벤트</p>
+                <div class="left_more">
+                    <a href="#">더보기 <span>></span></a>
+                </div><!-- left_more end -->
+            </div><!-- event_text end -->
+            <div class="swiper eventWrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/이벤트 컬렉션/연소일기.jpg" alt="연소일기 시사회 이벤트">
+                            <p>
+                                <연소일기> 시사회 초대 이벤트
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/이벤트 컬렉션/위대한 부재.png" alt="위대한 부재 이벤트">
+                            <p>
+                                <위대한 부재> 시사회 초대 이벤트
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section><!-- event end -->
+
+        <section class="collection">
+            <div class="collection_text">
+                <p class="title">왓챠피디아 컬렉션</p>
+                <div class="left_more">
+                    <a href="#">더보기 <span>></span></a>
+                </div><!-- left_more end -->
+            </div><!-- event_text end -->
+            <div class="swiper collectionWrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="collection_imgbox">
+                                <div class="collection_img pc">
+                                    <img src="img/이벤트 컬렉션/Group 1.png" alt="전주국제영화제 국제경쟁 대상 수상작">
+                                </div><!-- collection_img pc end -->
+                                <div class="collection_img tablet">
+                                    <img src="img/이벤트 컬렉션/태블릿-전주국제영화제.png" alt="전주국제영화제 국제경쟁 대상 수상작">
+                                </div><!-- collection_img tablet end -->
+                            </div><!-- collection_imgbox end -->
+                            <div class="collection_txtbox">
+                                <div class="collection_txtpc pc">
+                                    <p>전주국제영화제 국제경쟁 대상 수상작</p>
+                                </div><!-- collection_img pc end -->
+                                <div class="collection_txt tablet">
+                                    <p class="collection_title jeonju tablet">전주국제영화제 <br>국제경쟁 대상 수상작</p>
+                                    <div class="line"></div>
+                                    <p class="collection_subtitle subtitle01 tablet">
+                                        글로벌 영화계의 새로운 흐름을 이끄는, 혁신적이고 도전적인 영화들이 펼치는 예술적 깊이와 감동의 여정에
+                                        함께해보세요.
+                                    </p>
+                                </div><!-- collection_img tablet end -->
+                            </div><!-- collection_txtbox end -->
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="collection_imgbox">
+                                <div class="collection_img pc">
+                                    <img src="img/이벤트 컬렉션/Group 2.png" alt="백상예술대상 드라마작품상 수상작">
+                                </div><!-- collection_img pc end -->
+                                <div class="collection_img tablet">
+                                    <img src="img/이벤트 컬렉션/태블릿-백상예술대상-드라마작품상.png" alt="백상예술대상 드라마작품상 수상작">
+                                </div><!-- collection_imgbox tablet end -->
+                            </div><!-- collection_imgbox end -->
+                            <div class="collection_txtbox">
+                                <div class="collection_txtpc pc">
+                                    <p class="collection_txt pc">백상예술대상 드라마작품상 수상작</p>
+                                </div><!-- collection_img pc end -->
+                                <div class="collection_txt tablet">
+                                    <p class="collection_title drama tablet">백상예술대상 드라마작품상<br> 수상작</p>
+                                    <div class="line"></div>
+                                    <p class="collection_subtitle tablet">
+                                        최고의 스토리, 완성도 높은 연출, 깊이 있는 메시지가 만들어낸 드라마의 진정한 걸작을 만나보세요.
+                                    </p>
+                                </div><!-- collection_img tablet end -->
+                            </div><!-- collection_txtbox end -->
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="collection_imgbox">
+                                <div class="collection_img pc">
+                                    <img src="img/이벤트 컬렉션/Group 3.png" alt="칸 영화제 각본상 수상작">
+                                </div><!-- collection_img pc end -->
+                                <div class="collection_img tablet">
+                                    <img src="img/이벤트 컬렉션/태블릿-칸영화제각본상.png" alt="칸 영화제 각본상 수상작">
+                                </div><!-- collection_img tablet end -->
+                            </div><!-- collection_imgbox end -->
+                            <div class="collection_txtbox">
+                                <div class="collection_txtpc pc">
+                                    <p>칸 영화제 각본상 수상작</p>
+                                </div><!-- collection_img pc end -->
+                                <div class="collection_txt tablet">
+                                    <p class="collection_title kan tablet">칸 영화제 각본상<br> 수상작</p>
+                                    <div class="line"></div>
+                                    <p class="collection_subtitle tablet">
+                                        관객의 마음을 움직이는, 예술적 가치를 지닌 시나리오들. 스크린을 통해 마주할 이야기의 깊이에 빠져보세요.
+                                    </p>
+
+                                </div><!-- collection_img tablet end -->
+                            </div><!-- collection_txtbox end -->
+                        </a>
+                    </div>
+
+                </div><!-- wiper-wrapper end -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div><!-- collectionWrap end -->
+        </section><!-- collection end -->
+
+    </section><!-- main_group end -->
+
+    <div class="banner_num">
+        <div class="banner_bg">
+            <a href="#" class="pc">
+                <p>지금까지 <strong>★ 726,075,332개의 평가가 </strong>쌓였어요</p>
+            </a>
+        </div><!-- banner bg -->
+    </div><!-- banner num -->
+
+    <section class="contents_view">
+        <div class="contents_view_title">
+            <p class="contents_title">오늘은 이 콘텐츠 어때요?</p>
+            <span class="title mobile">맞춤추천 보러가기</span>
+            <img src="img/비주얼/캐릭터 .png" alt="추천 캐릭터 이미지" />
+        </div>
+        <!-- Swiper -->
+        <div class="swiper contentstopSwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide top01">
+                    <a href="#"><img src="img/비주얼/우리들.png" alt="우리들"></a>
+                    <div class="txt_box">
+                        <span class="box_title">우리들</span>
+                        <span class="box_sub">선호하는 태그 #연기력</span>
+                    </div><!-- txt_box 끝 -->
+                </div><!-- swiper-slide 끝 -->
+
+                <div class="swiper-slide top02">
+                    <a href="#"><img src="img/비주얼/언내추럴.png" alt="언내추럴"></a>
+                    <div class="txt_box">
+                        <span class="box_title">언내추럴</span>
+                        <span class="box_sub">일본 시리즈 인기 순위 25위</span>
+                    </div><!-- txt_box 끝 -->
+                </div><!-- swiper-slide 끝 -->
+
+                <div class="swiper-slide top03">
+                    <a href="#"><img src="img/비주얼/아키라.png" alt="아키라"></a>
+                    <div class="txt_box">
+                        <span class="box_title">아키라</span>
+                        <span class="box_sub">선호하는 태그 #애니메이션</span>
+                    </div><!-- txt_box 끝 -->
+                </div><!-- swiper-slide 끝 -->
+
+            </div><!-- swiper-wrapper 끝 -->
+        </div><!-- swiper contentstopSwiper 끝 -->
+    </section><!-- contents_view 끝 -->
+
+
+
+    <section class="contents02_view">
+        <!-- Swiper -->
+        <div class="swiper contentsbttomSwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide bottom01">
+                    <a href="#"><img src="img/비주얼/애프터양.png" alt="애프터양"></a>
+                    <div class="txt_box">
+                        <span class="box_title">애프터양</span>
+                        <span class="box_sub">재밌게본 ‘ 에이 아이 ’ 와 비슷해요</span>
+                    </div><!-- txt_box 끝 -->
+                </div><!-- swiper-slide 끝 -->
+
+                <div class="swiper-slide bottom02">
+                    <a href="#"><img src="img/비주얼/에에올.png" alt="에브리씽 에브리웨어 올 앳 원스"></a>
+                    <div class="txt_box">
+                        <span class="box_title">에브리씽 에브리웨어 올 앳 원스</span>
+                        <span class="box_sub">별점 5점을 준 작품! 그때의 감동을 다시 한 번 </span>
+                    </div><!-- txt_box 끝 -->
+                </div><!-- swiper-slide 끝 -->
+
+                <div class="swiper-slide bottom03">
+                    <a href="#"><img src="img/비주얼/킬링이브.png" alt="킬링이브"></a>
+                    <div class="txt_box">
+                        <span class="box_title">킬링이브</span>
+                        <span class="box_sub">선호하는 태그 #추리</span>
+                    </div><!-- txt_box 끝 -->
+                </div><!-- swiper-slide 끝 -->
+
+                <div class="swiper-slide bottom04">
+                    <a href="#"><img src="img/비주얼/8월의 크리스마스.png" alt="8월의 크리스마스"></a>
+                    <div class="txt_box">
+                        <span class="box_title">8월의 크리스마스</span>
+                        <span class="box_sub">회원님의 예상별점이 높은 작품</span>
+                    </div><!-- txt_box 끝 -->
+                </div><!-- swiper-slide 끝 -->
+
+            </div><!-- swiper-wrapper 끝 -->
+        </div><!-- swiper contentstopSwiper 끝 -->
+    </section><!-- contents_view 끝 -->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mainSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                },
+                683: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1105: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+            },
+
+        });
+
+        var swiper = new Swiper(".hotRank", {
+            slidesPerView: 5,
+            spaceBetween: 19,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 9,
+                },
+                550: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 9,
+                },
+                960: {
+                    slidesPerView: 4.2,
+                    spaceBetween: 16,
+                },
+                1360: {
+                    slidesPerView: 5,
+                    spaceBetween: 19,
+                },
+            },
+        });
+
+
+        var swiper = new Swiper(".boxOffice", {
+            slidesPerView: 5,
+            spaceBetween: 19,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 9,
+                },
+                550: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 9,
+                },
+                960: {
+                    slidesPerView: 4.2,
+                    spaceBetween: 16,
+                },
+                1360: {
+                    slidesPerView: 5,
+                    spaceBetween: 19,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".bookRank", {
+            slidesPerView: 5,
+            spaceBetween: 19,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 9,
+                },
+                550: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 9,
+                },
+                960: {
+                    slidesPerView: 4.2,
+                    spaceBetween: 16,
+                },
+                1360: {
+                    slidesPerView: 5,
+                    spaceBetween: 19,
+                },
+            },
+        });
+
+
+        var swiper = new Swiper(".magazineWrap", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+
+                689: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+
+                1319: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+
+                1320: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".eventWrap", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                641: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+                1320: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".collectionWrap", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                641: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+    
+    </script>
+</body>
+
+</html>
