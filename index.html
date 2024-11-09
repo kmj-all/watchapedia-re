@@ -11,8 +11,8 @@
         window.onload = () => {
             let menuBtn = document.querySelector('.menu_btn')
             let mobileNav = document.querySelector('.mobile_l')
-            let searchBtn = document.querySelector('.search_btn')
-            let searchItem = document.querySelector('.search')
+            let searchBtn = document.querySelector('.search03')
+            let searchItem = document.querySelector('.search02');
 
             menuBtn.addEventListener('click', () => {
                 mobileNav.classList.toggle('active');
@@ -20,7 +20,14 @@
             })
 
             searchBtn.addEventListener('click', () => {
-                searchItem.classList.toggle('active');
+                searchItem.classList.toggle('move');
+
+                //searchItem.style.width = '40vw';
+                //searchItem.style.transition = '0.7s';
+                //searchItem.style.paddingLeft = '10px';
+        
+                //추후 수정
+
             })
 
 
@@ -132,8 +139,8 @@
                 <!-- 모바일 -->
                 <div class="mobile_btn mobile">
                     <div class="search_btn mobile">
-                        <input class="search" type="text" placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요." />
-                        <img src="img/버튼아이콘/search02.png" alt="메뉴보기">
+                        <input class="search02" type="text" placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요." />
+                        <img class="search03" src="img/버튼아이콘/search02.png" alt="메뉴보기">
                     </div>
                     <div class="menu_btn mobile">
                         <img src="img/버튼아이콘/menu.png" alt="메뉴보기">
@@ -220,7 +227,7 @@
                     </div><!-- text_box 끝 -->
                 </div><!-- swiper-wrapper 끝 -->
             </div><!-- swiper mainSwiper 끝 -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
 
     </div> <!-- swiper mainSwiper -->
 
@@ -1141,6 +1148,139 @@
         </div><!-- swiper contentstopSwiper 끝 -->
     </section><!-- contents_view 끝 -->
 
+    <section class="ott_soon">
+        <div class="ott_soon_title">
+            <p class="ott_title">공개 예정작</p>
+            <span class="ott_subtitle pc">OTT에서 곧 만나볼 수 있는 작품들</span>
+            <!-- <img src="img/ott 예정작/캐릭터.png" alt="추천 캐릭터 이미지" /> -->
+        </div><!-- ott_soon_title 끝 -->
+        <div class="swiper ottSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/러빙빈센트.png" alt="러빙빈센트">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/우리, 이전에.png" alt="러브라이즈블라이딩">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/윈브레.png" alt="윈드브레이커">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/조명가게.png" alt="조명가게">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/아케인.png" alt="아케인2">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/프렌치수프.png" alt="프렌치수프">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/러브라이즈블라이딩.png" alt="러브라이즈블라이딩">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/사카모토데이즈.png" alt="사카모토데이즈">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/이한신.png" alt="가석방심사관이한신">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/슬램덩크.png" alt="슬램덩크">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/사일로.png" alt="사일로">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/ott 예정작/좀비버스2.png" alt="좀비버스2">
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="ott_btn">
+            <a href="#">시리즈 예정작 더보기</a>
+            <a href="#">영화 예정작 더보기</a>
+          </div><!-- ott_btn 끝 -->
+
+
+    </section><!-- ott_soon 끝 -->
+
+    <section class="movie_soon">
+        <div class="movie_soon_title">
+            <p class="movie_title">개봉 예정작</p>
+            <span class="movie_subtitle pc">극장에서 곧 만나볼 수 있는 작품들</span>
+            <!-- <img src="img/ott 예정작/캐릭터.png" alt="추천 캐릭터 이미지" /> -->
+        </div><!-- ott_soon_title 끝 -->
+        <div class="swiper movieSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/클로즈 유어 아이즈.png" alt="클로즈유어아이즈">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/롱레그스.png" alt="롱레그스">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/위키드.png" alt="위키드">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/아가미.png" alt="아가미">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/코난.png" alt="명탐정코난 : 100만 달러의 펜타그램">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/톰보이.png" alt="톰보이">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/모아나.png" alt="모아나2">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/청설.png" alt="청설">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/아노라.png" alt="아노라">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/연소일기.png" alt="연소일기">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/크리스마스에 기적을 만난 확률.png" alt="크리스마스에 기적을 만난 확률">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/개봉예정작/무파사.png" alt="무파사">
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="movie_btn">
+            <a href="#">개봉 예정작 더보기</a>
+          </div><!-- ott_btn 끝 -->
+
+
+    </section><!-- ott_soon 끝 -->
+
 
 
 
@@ -1346,7 +1486,72 @@
             },
         });
 
-    
+        var swiper = new Swiper(".ottSwiper", {
+        slidesPerView: 3.7,
+        spaceBetween: 16,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            // delay: 2300,
+            delay: 1,
+            disableOnInteraction: false,
+        },
+
+        speed: 3500,
+        observeParents:true,
+        observe:true,
+
+        breakpoints: {
+                320: {
+                    slidesPerView: 3.7,
+                    spaceBetween: 16,
+                },
+                641: {
+                    slidesPerView: 3.7,
+                    spaceBetween: 16,
+                },
+                1320: {
+                    slidesPerView: 5.7,
+                    spaceBetween: 24,
+                },
+            },
+
+        });
+
+
+        var swiper = new Swiper(".movieSwiper", {
+        slidesPerView: 3.7,
+        spaceBetween: 16,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            // delay: 2300,
+            delay: 1,
+            disableOnInteraction: false,
+        },
+
+        speed: 3500,
+        observeParents:true,
+        observe:true,
+
+        breakpoints: {
+                320: {
+                    slidesPerView: 3.7,
+                    spaceBetween: 16,
+                },
+                641: {
+                    slidesPerView: 3.7,
+                    spaceBetween: 16,
+                },
+                1320: {
+                    slidesPerView: 5.7,
+                    spaceBetween: 24,
+                },
+            },
+
+        });
+
+        
     </script>
 </body>
 
