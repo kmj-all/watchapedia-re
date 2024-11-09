@@ -1091,6 +1091,7 @@ body{
     gap: 19px;
     /* flex-wrap: wrap; */
     margin-bottom: 19px;
+    
 }
 
 .contents_view .swiper{
@@ -1111,6 +1112,10 @@ body{
     height: 108px;
     border-radius: 50px;
     background-color: #ffffff;
+    /* background: linear-gradient(-45deg, #368cea, #7629ef, #50adf9);
+    background-size: 400% 400%;
+    color: #fff;
+    animation: colorChange 5s ease infinite; */
     text-align: center;
     line-height: 108px;
     font-size: 30px;
@@ -1207,7 +1212,7 @@ body{
 .contents02_view{
     max-width: 1920px;
     width: 100%;
-    margin: 19px auto;  
+    margin: 56px auto;  
 }
 
 .contents02_view .swiper{
@@ -1290,6 +1295,159 @@ body{
     width: 25.88%;
     height: 100%;
 }
+
+/* 오티티 예정작 */
+
+.ott_soon{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    padding: 150px 0;
+}
+
+.ott_soon .ott_soon_title{
+    padding-top: 56px;
+    padding-bottom: 48px;
+    color: #fff;
+    text-align: center;
+
+}
+
+/* .ott_soon .ott_soon_title img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+} */
+
+.ott_soon .ott_soon_title .ott_title{
+    font-family: 'Pretendard-Bold';
+    font-size: 36px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.ott_soon .ott_btn{
+    display: flex;
+    gap: 36px;
+    margin-top: 56px;
+    justify-content: center;
+}
+
+.ott_soon .ott_btn a{
+    display: block;
+    width: 174px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    transition: 0.6s;
+    background-color: #fff;
+}
+
+
+.ott_soon .ott_btn a:hover{
+    background-color: #ff305b;
+    color: #fff;
+    
+}
+
+.ott_soon .swiper-wrapper{
+    transition-timing-function: linear;
+}
+
+ 
+.ott_soon .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+ }
+
+ .ott_soon .section_swiper > ul{
+    -webkit-transition-timing-function:linear!important;
+    -o-transition-timing-function:linear!important;
+    transition-timing-function:linear!important;
+  }
+
+  /* 개봉예정작 */
+
+  .movie_soon{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    padding-bottom: 56px;
+}
+
+    .movie_soon .movie_soon_title{
+    padding-bottom: 48px;
+    color: #fff;
+    text-align: center;
+}
+
+/* .ott_soon .ott_soon_title img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+} */
+
+.movie_soon .movie_soon_title .movie_title{
+    font-family: 'Pretendard-Bold';
+    font-size: 36px;
+    margin-bottom: 10px;
+    line-height: 1;
+    
+}
+
+.movie_soon .movie_btn{
+    margin-top: 56px;
+
+}
+
+.movie_soon .movie_btn a{
+    display: block;
+    width: 174px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    transition: 0.6s;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+
+.movie_soon .movie_btn a:hover{
+    background-color: #ff305b;
+    color: #fff;
+    
+}
+
+.movie_soon .swiper-wrapper{
+    transition-timing-function: linear;
+}
+
+ 
+.movie_soon .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+ }
+
+ .movie_soon .section_swiper > ul{
+    -webkit-transition-timing-function:linear!important;
+    -o-transition-timing-function:linear!important;
+    transition-timing-function:linear!important;
+  }
+
 
 
 
@@ -1709,7 +1867,8 @@ body{
 
     .header .inner .mobile_btn{
         display: flex;
-        gap: 29px;
+        gap: 45px;
+        position: relative;
         /* align-items: center; */
     }
 
@@ -1728,10 +1887,13 @@ body{
 
     .header .inner .mobile_btn .search_btn img{
         height: 100%;
+        position: absolute;
+        top: 1px;
+        right: 35px;
     }
 
     .header .inner .mobile_btn .search_btn input{
-        width: 300px;
+        width: 0;
         height: 38px;
         background-color: #f5f5f5;
         border: none;
@@ -1739,12 +1901,19 @@ body{
         color: #353535;
         font-family: 'Pretendard-Medium';
         font-size: 14px;
-        padding-left: 40px;
+        /* padding-left: 40px; */
+        padding-left: 0;
         transition: 0.7s;
-        /* position: fixed;
         bottom: 29.5px;
-        left: 100%; */
-        display: none;
+        left: 100%; 
+        margin-top: -20px;
+        /* display: none; */
+    }
+
+    .header .inner .mobile_btn .search_btn .move{
+        width: 38vw;
+        transition: 0.7s;
+        padding-left: 10px;
     }
 
     .header .inner .mobile_btn .search_btn input:focus{
@@ -2012,6 +2181,15 @@ body{
   /* 모바일 480 미디어 쿼리 */
 
   @media screen and (max-width:480px){
+
+    .header .inner .header_l a{
+        width: 90%;
+    }
+ 
+    .header .inner .header_l a img {
+        width: 90%;
+        object-fit: contain;
+    }
 
     /* 모바일 간격 */
 
