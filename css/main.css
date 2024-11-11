@@ -1298,6 +1298,12 @@ body{
 
 /* 오티티 예정작 */
 
+.ott_soon .mobile,
+.movie_soon .mobile{
+    display: none;
+}
+
+
 .ott_soon{
     max-width: 1920px;
     width: 100%;
@@ -1448,6 +1454,11 @@ body{
     transition-timing-function:linear!important;
   }
 
+
+  .movie_soon br,
+  .ott_soon br{
+    display: none;
+  }
 
 
 
@@ -1654,7 +1665,14 @@ body{
 }
 
 
+/*   태블릿 1024 미디어쿼리 */
 
+@media screen and (max-width:1024px){
+
+    .ott_soon{
+        padding: 70px 0;
+    }
+}
 
 
 
@@ -2150,6 +2168,99 @@ body{
        color: #555;
     }
 
+    /* 오티티 예정작 */
+    /* br,pc none  */
+
+    .contents02_view {
+        margin: 0 auto;
+    }
+
+    .movie_soon br,
+    .ott_soon br{
+        display: block;
+    }
+
+    .ott_soon .mobile,
+    .movie_soon .mobile{
+    display: block;
+    }    
+
+    .ott_soon {
+       padding: 15px 0;
+    }
+    
+    .ott_soon .ott_soon_title .pc{
+        display: none;
+    }
+
+    .ott_soon .swiper{
+        display: none;
+    }
+
+    .ott_soon .ott_btn{
+        display: none;
+    }
+
+    .ott_soon .ott_soon_title{
+        width: calc(100% - 40px);
+        height: 125px;
+        margin: 0 auto;
+        font-family: 'Pretendard-Bold';
+        padding-left: 42px;
+        border-radius: 5px;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: #333;
+        text-align: left;
+        background: url(../img/모바일이미지/OTT예정작.png) right center / 100% no-repeat #ffffff00;
+    }
+
+
+    .ott_soon .ott_soon_title .ott_title{
+        font-size: 25px;
+        padding-top: 32px;
+        line-height: 1.2;
+    }
+
+    /* 개봉예정작 */
+
+    .movie_soon {
+        padding: 0;
+     }
+     
+     .movie_soon .movie_soon_title .pc{
+         display: none;
+     }
+ 
+     .movie_soon .swiper{
+         display: none;
+     }
+ 
+     .movie_soon .movie_btn{
+         display: none;
+     }
+ 
+     .movie_soon .movie_soon_title{
+         width: calc(100% - 40px);
+         height: 125px;
+         margin: 0 auto;
+         font-family: 'Pretendard-Bold';
+         padding-left: 42px;
+         border-radius: 5px;
+         padding-top: 0;
+         padding-bottom: 0;
+         color: #333;
+         text-align: left;
+         background: url(../img/모바일이미지/극장개봉예정작.png) right center / 100% no-repeat #ffffff00;
+     }
+
+ 
+     .movie_soon .movie_soon_title .movie_title{
+         font-size: 25px;
+         padding-top: 32px;
+         line-height: 1.2;
+     }
+
 }
 
 
@@ -2316,6 +2427,8 @@ body{
     .contents_view .contents_view_title span{
         font-size: 14px;
     }
+
+
 
 
   }
