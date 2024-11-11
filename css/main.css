@@ -2428,6 +2428,34 @@ body{
         font-size: 14px;
     }
 
+    /* 모바일 이미지 간격 폰트사이즈 수정 */
+
+    .contents_view .contents_view_title{
+        margin-top: 5px;
+    }
+
+    .contents_view .contents_view_title .contents_title{
+        font-size: 20px;
+    }
+
+    .contents_view .contents_view_title span{
+        margin-top: -38px;
+    }
+
+    .ott_soon .ott_soon_title .ott_title,
+    .movie_soon .movie_soon_title .movie_title{
+        font-size: 20px;
+    }
+
+    .ott_soon .ott_soon_title .ott_title,
+    .movie_soon .movie_soon_title .movie_title{
+        padding-top: 40px;
+    }
+
+    .ott_soon,
+    .movie_soon{
+        padding: 5px 0;
+    }
 
 
 
