@@ -1461,6 +1461,106 @@ body{
   }
 
 
+  /* 왓챠플레이 소개 / 왓챠 디깅클럽 */
+
+  .more_view{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 231px;
+    background-color: #000000;
+    /* padding-bottom: 56px; */
+  }
+
+  .more_view .view_inner{
+    display: flex;
+  }
+
+  .more_view .view_inner .view_item{
+    width: 50%;
+    padding-left: 66px;
+  }
+
+  .more_view .view_inner .view_item .view_text .view_title{
+    font-size: 80px;
+    font-family: 'Pretendard-Bold';
+    line-height: 110px;
+    background: linear-gradient(90deg, rgba(182,53,156,1) 0%, rgba(239,10,106,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 60px;
+  }
+
+  .more_view .view_inner .view_item .view_text .view_text_box {
+    display: flex;
+    gap: 42px;
+  }
+
+  .more_view .view_inner .view_item .view_text .view_text_box a{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Pretendard-Medium';
+    line-height: 1;
+    
+  }
+
+  
+  .more_view .view_inner .view_item .view_text .view_text_box .view_btn{
+    background-color: #ea157a;
+    width: 30px;
+    height: 30px;
+    border-radius: 27.5px 2.5px 2.5px 2.5px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .more_view .view_inner .view_item img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 60px;
+  }
+
+  .more_view .view_inner .view_item .view_text .title02{
+    background: linear-gradient(90deg, rgba(1,94,234,1) 0%, rgba(0,192,250,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .more_view .view_inner .view_item .view_text a{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Pretendard-Medium';
+    line-height: 1;
+  }
+
+  .more_view .view_inner .view_item .view_watcha{
+    display: flex;
+    gap: 70px;
+  }
+
+  .more_view .view_inner .view_item .view_watcha img{
+    width: 412px;
+    height: 412px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid rgba(248, 247, 247, 0.349);
+  }
+
+  .more_view .view_inner .view_item .view_watcha .watcha_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(1,94,234,1) 0%, rgba(0,192,250,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
 
 /*   태블릿 1820 미디어쿼리 */
 
