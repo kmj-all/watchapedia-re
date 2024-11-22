@@ -55,6 +55,10 @@ body{
     overflow-x: hidden;
 }
 
+body.on{
+    overflow: hidden;
+}
+
 /* 헤더 시작 */
 
 .header{
@@ -678,11 +682,18 @@ body{
 
 
  .magazine .magazine_text .left_more{
-    display: flex;
     font-size: 12px;
     color: #999;
     text-align: center;
     margin-bottom: 20px;
+ }
+
+ .magazine .magazine_text .left_more a::after{
+    content: '';
+    background: url('../img/버튼아이콘/Vector.svg')center center / 100% no-repeat;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
  }
 
  .magazine .magazineWrap .swiper-wrapper .swiper-slide .img_2{
@@ -785,11 +796,19 @@ body{
 }
 
 .main_group .coment .coment_text .left_more{
-    display: flex;
     font-size: 12px;
     color: #999;
     text-align: center;
     margin-bottom: 20px;
+ }
+
+ 
+ .main_group .coment .coment_text .left_more a::after{
+    content: '';
+    background: url('../img/버튼아이콘/Vector.svg')center center / 100% no-repeat;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
  }
 
  .main_group .coment .coment_wrap{
@@ -934,13 +953,21 @@ body{
 }
 
 .main_group .event .event_text .left_more{
-    display: flex;
     font-size: 12px;
     color: #999;
     text-align: center;
     margin-bottom: 20px;
  }
 
+ .main_group .event .event_text .left_more a::after{
+    content: '';
+    background: url('../img/버튼아이콘/Vector.svg')center center / 100% no-repeat;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+ }
+
+ 
  
 .main_group .event .swiper-wrapper .swiper-slide img{
     width: 100%;
@@ -949,12 +976,11 @@ body{
 
  .main_group .event .swiper-wrapper .swiper-slide p{
     position: relative;
-    top: -7px;
     width: 100%;
     background: rgba( 0, 0, 0, 0.07 );
     /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
+    /* backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px ); */
     border-radius: 5px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -1003,12 +1029,19 @@ body{
 }
 
 .main_group .collection .collection_text .left_more{
-    display: flex;
     font-size: 12px;
     color: #999;
     text-align: center;
     margin-bottom: 20px;
 }
+
+.main_group .collection .collection_text  .left_more a::after{
+    content: '';
+    background: url('../img/버튼아이콘/Vector.svg')center center / 100% no-repeat;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+ }
 
 .main_group .collection .collectionWrap{
     background-color: #e8e8e8;
@@ -1481,6 +1514,10 @@ body{
     padding-left: 66px;
   }
 
+  .more_view .view_inner .view_item .view_text .mobile{
+    display: none;
+  }
+
   .more_view .view_inner .view_item .view_text .view_title{
     font-size: 80px;
     font-family: 'Pretendard-Bold';
@@ -1521,7 +1558,10 @@ body{
     object-fit: cover;
     display: block;
     margin-top: 60px;
+    margin-bottom: 90px;
   }
+
+  /* 여기까지 왓챠피디아 소개 */
 
   .more_view .view_inner .view_item .view_text .title02{
     background: linear-gradient(90deg, rgba(1,94,234,1) 0%, rgba(0,192,250,1) 100%);
@@ -1538,19 +1578,20 @@ body{
 
   .more_view .view_inner .view_item .view_watcha{
     display: flex;
+    align-items: center;
     gap: 70px;
   }
 
   .more_view .view_inner .view_item .view_watcha img{
-    width: 412px;
-    height: 412px;
+    width: 44.90%;
+    height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 50%;
     border: 5px solid rgba(248, 247, 247, 0.349);
   }
 
-  .more_view .view_inner .view_item .view_watcha .watcha_text{
+  .more_view .view_inner .view_item .view_watcha p{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1558,8 +1599,131 @@ body{
     background: linear-gradient(90deg, rgba(1,94,234,1) 0%, rgba(0,192,250,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
   }
 
+  .more_view .view_inner .view_item .view_watcha .watcha_text p:first-child{
+    font-size: 30px;
+    font-family: 'Pretendard-Bold';
+  }
+
+  .more_view .view_inner .view_item .view_watcha .watcha_text .view_text{
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .more_view .view_inner .view_item .view_watcha .watcha_text .view_text p{
+    font-size: 21px;
+  }
+
+  .more_view .view_inner .view_item .view_watcha .watcha_text a{
+    background-color: #0190f2;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 27.5px 2.5px 2.5px 2.5px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+/* footer */
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: 'Pretendard-Regular';
+    color: #a5a5a7;
+    background-color: #1c1d1f;
+    font-size: 13px;
+    border: 1px solid #aaaaaa21;
+    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+.footer{
+    background-color: #1c1d1f;
+    width: 100%;
+    padding: 56px;
+}
+
+.footer .mobile{
+    display: none;
+}
+
+.footer .inner{
+    max-width: 1320px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    color: #a5a5a7;
+    font-size: 13px;
+}
+
+
+.footer .inner .footer_textwrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .inner .footer_textwrap .footer_left .left_01{
+    margin-bottom: 18px;
+}
+
+.footer .inner .footer_textwrap .footer_left .left_03{
+    margin-bottom: 30px;
+}
+
+.footer .inner .footer_textwrap .footer_left .left_01 span:nth-child(1),
+.footer .inner .footer_textwrap .footer_left .left_01 span:nth-child(2){
+ font-weight: bold;
+}
+
+.footer .inner .footer_textwrap .footer_left .left_06::before{
+    content: '';
+    background: url(../img/푸터/푸터로고.png) right center / 100% no-repeat #ffffff00;
+    width: 74px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.footer .inner .footer_textwrap .footer_left .left_01 span:nth-child(1)::after,
+.footer .inner .footer_textwrap .footer_left .left_01 span:nth-child(2)::after,
+.footer .inner .footer_textwrap .footer_left .left_02 span:nth-child(1)::after,
+.footer .inner .footer_textwrap .footer_left .left_03 span:nth-child(1)::after,
+.footer .inner .footer_textwrap .footer_left .left_04 span:nth-child(1)::after,
+.footer .inner .footer_textwrap .footer_left .left_04 span:nth-child(2)::after{
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #a5a5a7;
+    display: inline-block;
+    margin: 0 4px 0 5px;
+    position: relative;
+    bottom: -2px;
+}
+
+.footer .inner .footer_textwrap .footer_right .sns_icon {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-top: 46px;
+}
+
+.footer .inner .footer_textwrap .footer_right .sns_icon a{
+    height: 20px;
+}
+
+.footer .inner .footer_textwrap .footer_right .sns_icon img{
+    height: 100%;
+}
 
 
 /*   태블릿 1820 미디어쿼리 */
@@ -1756,6 +1920,75 @@ body{
 }
 
 
+/*   태블릿 1312 미디어쿼리 */
+
+@media screen and (max-width:1312px){
+
+    .more_view .view_inner{
+        flex-wrap: wrap;
+    }
+
+    .more_view .view_inner .view_item{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .more_view .view_inner .view_item .view_text .view_title{
+        text-align: center;
+    }
+    .more_view .view_inner .view_item .view_text .view_text_box{
+        justify-content: center;
+    }
+
+    .more_view .view_inner .view_item img{
+        margin-bottom: 60px;
+    }
+
+    /* 왓챠피디아 태블릿 중앙정렬 끝 */
+
+    .more_view .view_inner .view_item .view_text .title02 br{
+        display: none;
+    }
+
+    .more_view .view_inner .view_item .view_text .title02{
+        margin-bottom: 38px;  
+    }
+
+    .more_view .view_inner .view_item .view_text{
+        text-align: center;
+    }
+
+    .more_view .view_inner .view_item .view_text .view_text_mobile{
+        display: flex;
+        justify-content: center;
+        gap: 42px;
+        margin-bottom: 56px;
+    }
+
+    .more_view .view_inner .view_item .view_text .view_btn{
+        background-color: #0190f2;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 27.5px 2.5px 2.5px 2.5px;
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .more_view .view_inner .view_item .pc{
+    display: none;
+    }
+
+    .more_view .view_inner .view_item .view_text .mobile{
+        display: block;
+    }
+
+
+}
+
+
 /*   태블릿 1185 미디어쿼리 */
 
 @media screen and (max-width:1185px){
@@ -1943,6 +2176,76 @@ body{
     }
 }
 
+@media screen and (max-width:765px){
+    /* 왓챠디깅클럽 숨기기 */
+    /* 모바일 sns 보이게 */
+    .more_view{
+        margin-top: 0;
+        padding-top: 56px;
+    }
+
+    .more_view .view_inner .view_item:nth-child(2){
+        display: none;
+    }
+
+    .more_view .view_inner .view_item .view_text .view_title{
+        font-size: 10vw;
+        line-height: 1.3;
+    }
+
+    .more_view .view_inner .view_item .view_text .view_title{
+        margin-bottom: 20px;
+    }
+
+    .more_view .view_inner .view_item .view_text .view_text_box .view_btn{
+        display: none;
+    }
+
+    .more_view .view_inner .view_item .view_text .view_text_box a
+    {
+        font-size: 4vw;
+        width: 50%;
+        height: 12vw;
+        line-height: 12vw;
+        background-color: #016aec;
+        border-radius: 50px;
+    }
+
+    .footer .mobile{
+        display: block;
+    }
+
+    .footer .inner .footer_textwrap .footer_left  .left_01{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    .footer .inner .footer_textwrap .footer_left .left_01 span:nth-child(1)::after,
+    .footer .inner .footer_textwrap .footer_left .left_01 span:nth-child(2)::after{
+    display: none;
+    }
+
+    .footer .inner .footer_textwrap .footer_left .sns_icon {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-start;
+        margin: 22px 0;
+    }
+    
+    .footer .inner .footer_textwrap .footer_left .sns_icon a{
+        height: 20px;
+    }
+    
+    .footer .inner .footer_textwrap .footer_left .sns_icon img{
+        height: 100%;
+    }
+
+    .footer .inner .footer_textwrap .footer_right .sns_icon {
+        display: none;
+    }
+}
+
 /*  모바일 697 미디어쿼리 */
 
 @media screen and (max-width:697px){
@@ -2062,10 +2365,54 @@ body{
     .header .inner .mobile_l .gnb > li{
         /* margin-bottom: 15px; */
         padding: 32px 16px;
-        border-top: 1px solid #000;
+        border-bottom: 1px solid #0000001a;
         width: 100%;
         transition: 0.5s;
+        display: flex;
+        gap: 30px;
+        align-items: center;
     }
+
+    .header .inner .mobile_l .gnb > li:first-child:before{
+        content: '';
+        background: url('../img/모바일헤더/홈.png')center center / 100% no-repeat;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+    }
+
+    .header .inner .mobile_l .gnb > li:nth-child(2)::before{
+        content: '';
+        background: url('../img/모바일헤더/영화.png')center center / 100% no-repeat;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+    }
+
+    .header .inner .mobile_l .gnb > li:nth-child(3)::before{
+        content: '';
+        background: url('../img/모바일헤더/시리즈.png')center center / 100% no-repeat;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+    }
+
+    .header .inner .mobile_l .gnb > li:nth-child(4)::before{
+        content: '';
+        background: url('../img/모바일헤더/책.png')center center / 100% no-repeat;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+    }
+
+    .header .inner .mobile_l .gnb > li:nth-child(5)::before{
+        content: '';
+        background: url('../img/모바일헤더/웹툰.png')center center / 100% no-repeat;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+    }
+
 
     .header .inner .mobile_l .gnb > li:hover {
         color: #ff0558;
@@ -2073,7 +2420,7 @@ body{
     }
 
     .header .inner .mobile_l .gnb > li:nth-child(5){
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #0000001a;
         margin-bottom: 30px;
     }
 
@@ -2513,6 +2860,11 @@ body{
         font-size: 14px;
     }
 
+    /* 배너 위아래 패딩 */
+    .banner_num{
+       padding: 10px 0;
+    }
+
 
 
 
@@ -2542,19 +2894,24 @@ body{
         margin-top: -38px;
     }
 
-    .ott_soon .ott_soon_title .ott_title,
-    .movie_soon .movie_soon_title .movie_title{
-        font-size: 20px;
+    .ott_soon .ott_soon_title,
+    .movie_soon .movie_soon_title{
+        position: relative;
     }
+
 
     .ott_soon .ott_soon_title .ott_title,
     .movie_soon .movie_soon_title .movie_title{
-        padding-top: 40px;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-top: 0;
     }
 
     .ott_soon,
     .movie_soon{
-        padding: 5px 0;
+        padding: 0;
     }
 
 
