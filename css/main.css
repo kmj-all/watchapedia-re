@@ -2379,44 +2379,36 @@ select {
         align-items: center;
     }
 
+    .header .inner .mobile_l .gnb > li:before{
+        content: '';
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+    }
+
     .header .inner .mobile_l .gnb > li:first-child:before{
         content: '';
         background: url('../img/모바일헤더/홈.png')center center / 100% no-repeat;
-        width: 70px;
-        height: 70px;
-        display: inline-block;
     }
 
     .header .inner .mobile_l .gnb > li:nth-child(2)::before{
         content: '';
         background: url('../img/모바일헤더/영화.png')center center / 100% no-repeat;
-        width: 70px;
-        height: 70px;
-        display: inline-block;
     }
 
     .header .inner .mobile_l .gnb > li:nth-child(3)::before{
         content: '';
         background: url('../img/모바일헤더/시리즈.png')center center / 100% no-repeat;
-        width: 70px;
-        height: 70px;
-        display: inline-block;
     }
 
     .header .inner .mobile_l .gnb > li:nth-child(4)::before{
         content: '';
         background: url('../img/모바일헤더/책.png')center center / 100% no-repeat;
-        width: 70px;
-        height: 70px;
-        display: inline-block;
     }
 
     .header .inner .mobile_l .gnb > li:nth-child(5)::before{
         content: '';
         background: url('../img/모바일헤더/웹툰.png')center center / 100% no-repeat;
-        width: 70px;
-        height: 70px;
-        display: inline-block;
     }
 
 
