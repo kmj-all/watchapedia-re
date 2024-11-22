@@ -2364,15 +2364,13 @@ select {
         top: 59px;
         left: 100%; 
         /* 화면 밖으로 배치 후 스크립트로 left:0을 만들어 화면안으로 다시 배치 */
-        /* padding: 56px; */
-        padding-top: 56px;
         transition: 0.7s;
         z-index: 999;
     }
 
     .header .inner .mobile_l .gnb > li{
         /* margin-bottom: 15px; */
-        padding: 32px 16px;
+        padding: 24px 16px;
         border-bottom: 1px solid #0000001a;
         width: 100%;
         transition: 0.5s;
