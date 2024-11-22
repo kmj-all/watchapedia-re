@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script>
         window.onload = () => {
-            let menuBtn = document.querySelector('.menu_btn')
-            let mobileNav = document.querySelector('.mobile_l')
-            let searchBtn = document.querySelector('.search03')
+            let menuBtn = document.querySelector('.menu_btn');
+            let mobileNav = document.querySelector('.mobile_l');
+            let searchBtn = document.querySelector('.search03');
             let searchItem = document.querySelector('.search02');
+            let body = document.querySelector('body');
 
             menuBtn.addEventListener('click', () => {
                 mobileNav.classList.toggle('active');
-
+                body.classList.toggle('on');
             })
 
             searchBtn.addEventListener('click', () => {
@@ -83,6 +84,8 @@
                 });
                 
             } //if
+
+
             
         } //script end
 
@@ -717,7 +720,7 @@
         <div class="magazine_text">
             <p class="title">매거진</p>
             <div class="left_more">
-                <a href="#">더보기 <span>></span></a>
+                <a href="#">더보기</a>
             </div><!-- left_more end -->
         </div><!-- magazin_text end -->
         <div class="swiper magazineWrap">
@@ -784,7 +787,7 @@
             <div class="coment_text">
                 <p class="title">지금 뜨는 코멘트</p>
                 <div class="left_more">
-                    <a href="#">더보기 <span>></span></a>
+                    <a href="#">더보기</a>
                 </div><!-- left_more end -->
             </div><!-- coment_text end -->
             <div class="coment_wrap">
@@ -814,11 +817,11 @@
                     </div><!-- item_middle end -->
                     <div class="item_bottom">
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <a href="#"><img src="img/코멘트/댓글.svg" alt="코멘트 댓글"></a>
                             <p>0</p>
                         </div><!-- bottom_01end -->
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <a href="#"><img src="img/코멘트/추천.svg" alt="코멘트 추천"></a>
                             <p>91</p>
                         </div><!-- bottom_01end -->
                     </div><!-- item_bottom end -->
@@ -850,11 +853,11 @@
                     </div><!-- item_middle end -->
                     <div class="item_bottom">
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <a href="#"><img src="img/코멘트/댓글.svg" alt="코멘트 댓글"></a>
                             <p>0</p>
                         </div><!-- bottom_01end -->
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <a href="#"><img src="img/코멘트/추천.svg" alt="코멘트 추천"></a>
                             <p>95</p>
                         </div><!-- bottom_01end -->
                     </div><!-- item_bottom end -->
@@ -886,11 +889,11 @@
                     </div><!-- item_middle end -->
                     <div class="item_bottom">
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <a href="#"><img src="img/코멘트/댓글.svg" alt="코멘트 댓글"></a>
                             <p>0</p>
                         </div><!-- bottom_01end -->
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <a href="#"><img src="img/코멘트/추천.svg" alt="코멘트 추천"></a>
                             <p>94</p>
                         </div><!-- bottom_01end -->
                     </div><!-- item_bottom end -->
@@ -922,11 +925,11 @@
                     </div><!-- item_middle end -->
                     <div class="item_bottom">
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/댓글.png" alt="코멘트 댓글"></a>
+                            <a href="#"><img src="img/코멘트/댓글.svg" alt="코멘트 댓글"></a>
                             <p>0</p>
                         </div><!-- bottom_01end -->
                         <div class="bottom">
-                            <a href="#"><img src="img/코멘트/추천.png" alt="코멘트 추천"></a>
+                            <a href="#"><img src="img/코멘트/추천.svg" alt="코멘트 추천"></a>
                             <p>52</p>
                         </div><!-- bottom_01end -->
                     </div><!-- item_bottom end -->
@@ -938,7 +941,7 @@
             <div class="event_text">
                 <p class="title">이벤트</p>
                 <div class="left_more">
-                    <a href="#">더보기 <span>></span></a>
+                    <a href="#">더보기</a>
                 </div><!-- left_more end -->
             </div><!-- event_text end -->
             <div class="swiper eventWrap">
@@ -969,7 +972,7 @@
             <div class="collection_text">
                 <p class="title">왓챠피디아 컬렉션</p>
                 <div class="left_more">
-                    <a href="#">더보기 <span>></span></a>
+                    <a href="#">더보기</a>
                 </div><!-- left_more end -->
             </div><!-- event_text end -->
             <div class="swiper collectionWrap">
@@ -1295,7 +1298,7 @@
                         <a href="#" class="view_btn">→</a>
                     </div><!--view_text_box 끝 -->
                 </div><!--view_text 끝 -->
-                <img src="img/왓챠플레이/왓챠-오리지널-익스클루시브.png" alt="왓챠플레이소개이미지">
+                <img src="img/왓챠플레이/왓챠오리지널익스클루시브.png" alt="왓챠플레이소개이미지">
             </div><!--view_item 끝 -->
 
             <div class="view_item">
@@ -1304,14 +1307,19 @@
                         왓챠피디아<br>
                         더 둘러보기
                     </p><!--view_title 끝 -->
-                    <a href="#"># 왓챠디깅클럽</a>
+                    <div class="view_text_mobile">
+                        <a href="#"># 왓챠디깅클럽</a>
+                        <a href="#"class="view_btn mobile">→</a>
+                    </div><!--view_text_mobile 끝 -->
                 </div><!--view_text 끝 -->
-                <div class="view_watcha">
+                <div class="view_watcha pc">
                     <img src="img/왓챠디깅클럽.jpg" alt="왓챠디깅클럽">
                     <div class="watcha_text">
                         <p class="pc">"내 선택을 좋아할래요"</p>
-                        <p class="pc">〈성덕〉 오세연 감독</p>
-                        <a href="#" class="view_btn" ></a>
+                        <div class="view_text">
+                            <p class="pc">〈성덕〉 오세연 감독</p>
+                            <a href="#"class="view_btn pc">→</a>
+                        </div><!--view_text 끝 --> 
                     </div><!--watcha_text 끝 --> 
                 </div><!--view_watcha 끝 --> 
             </div><!--view_item 끝 --> 
@@ -1319,6 +1327,59 @@
             
         </div><!--inner 끝 -->
     </section><!-- more_view 끝 -->
+
+    <footer class="footer">
+        <div class="inner">
+            <div class="footer_textwrap">
+                <div class="footer_left">
+                    <div class="left_01">
+                        <span>서비스 이용약관</span>
+                        <span>개인정보 처리방침</span>
+                        <span>회사 안내</span>
+                    </div><!-- left_01 끝 -->
+                    <div class="sns_icon mobile">
+                        <a href="#"><img src="img/푸터/sns.svg" alt="페이스북"></a>
+                        <a href="#"><img src="img/푸터/x.svg" alt="x"></a>
+                        <a href="#"><img src="img/푸터/link.svg" alt="watcha.team"></a>
+                </div><!-- sns_icon 끝 -->
+                    <div class="left_02">
+                        <span>고객센터</span>
+                        <span>cs@watchapedia.co.kr, 02-515-9985</span>
+                    </div><!-- left_02 끝 -->
+                    <div class="left_03">
+                        <span>제휴 및 대외 협력</span>
+                        <a>https://watcha.team/contact</a>
+                    </div><!-- left_03 끝 -->
+                    <div class="left_04">
+                        <span>주식회사 왓챠</span>
+                        <span>대표 박태훈</span>
+                        <span>서울특별시 서초구 강남대로 343 신덕빌딩 3층</span>
+                    </div><!-- left_04 끝 -->
+                    <div class="left_05">
+                        <span>사업자 등록 번호  211-88-66013</span>
+                    </div><!-- left_05 끝 -->
+                    <div class="left_06">
+                        <span>© 2024 by WATCHA, Inc. All rights reserved.</span>
+                    </div><!-- left_06 끝 -->
+                </div><!-- footer_left 끝 -->
+                <div class="footer_right">
+                    <div class="lang">
+                        <label for="label"></label>
+                        <select name="lang" id="lang">
+                            <option value="">한국어</option>
+                            <option value="">日本語</option>
+                            <option value="">English</option>
+                        </select>
+                    </div><!-- lang 끝 -->
+                    <div class="sns_icon pcver">
+                            <a href="#"><img src="img/푸터/sns.svg" alt="페이스북"></a>
+                            <a href="#"><img src="img/푸터/x.svg" alt="x"></a>
+                            <a href="#"><img src="img/푸터/link.svg" alt="watcha.team"></a>
+                    </div><!-- sns_icon 끝 -->
+                </div><!-- footer_right 끝 -->
+            </div><!-- footer_textwrap 끝 -->
+        </div><!-- inner 끝 -->
+    </footer><!-- footer 끝 -->
 
 
 
