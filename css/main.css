@@ -105,6 +105,14 @@ body.on{
     color: #777777;
 }
 
+.header .inner .header_l .pc_nav .gnb > li{
+    transition: 0.7s;
+}
+
+.header .inner .header_l .pc_nav .gnb > li:hover{
+    color: #333;
+}
+
 .header .inner .header_l .pc_nav .gnb > li a{
     padding: 0 16px;
 }
