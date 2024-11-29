@@ -1659,7 +1659,7 @@ select {
 .footer{
     background-color: #1c1d1f;
     width: 100%;
-    padding: 56px;
+    padding: 56px 0;
 }
 
 .footer .mobile{
@@ -2485,6 +2485,37 @@ select {
 
 }
 
+/* 모바일 685 미디어쿼리 푸터 */
+
+@media screen and (max-width:685px){
+
+    .footer .inner{
+        width: calc(100% - 40px);
+    }
+
+    .footer .inner .footer_textwrap {
+        display: block;
+    }
+
+    .footer .inner .footer_textwrap {
+        position: relative;
+    }
+    
+    .footer .inner .footer_textwrap .footer_left .left_01{
+        gap: 18px;
+    }
+
+    .footer .inner .footer_textwrap .footer_left .left_03 {
+        margin-bottom: 18px;
+    }
+
+    select{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
 /* 모바일 683 미디어 쿼리 */
 
 @media screen and (max-width:683px){
@@ -2915,5 +2946,41 @@ select {
 
 
   }
+
+  @media screen and (max-width:460px){
+
+    .contents_view .contents_view_title {
+        height: 118px;
+    }
+
+    .ott_soon .ott_soon_title {
+        height: 118px;
+    }
+
+    .movie_soon .movie_soon_title{
+        height: 118px;
+    }
+
+
+  }
+
+  
+  @media screen and (max-width:430px){
+
+    .contents_view .contents_view_title {
+        height: 110px;
+    }
+
+    .ott_soon .ott_soon_title {
+        height: 110px;
+    }
+
+    .movie_soon .movie_soon_title{
+        height: 110px;
+    }
+
+
+  }
+
 
 
